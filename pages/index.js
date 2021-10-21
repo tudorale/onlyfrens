@@ -36,7 +36,7 @@ export default function Home() {
     initialSlide: 0,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
-  };
+  }
 
   return (
     <div className={styles.container}>
@@ -164,6 +164,79 @@ export default function Home() {
             </div>
           </Slider>
         </div>
+      </div>
+    
+      <div className={styles.lines}>
+        <img src="/line.png" alt="line" className={styles.line}/>
+        <img src="/line2.png" alt="line" className={styles.line}/>
+      </div>
+
+      <div className={styles.section}>
+        <div>
+          <Image src="/block.png" width="520" height="620" alt="block"></Image>
+        </div>
+        <div className={styles.texts}>
+          <h1 style={{fontWeight: "600"}}>Giving purpose to holding<br/> An <span style={{fontWeight: "800"}}><i>NFT</i></span>:</h1>
+          <p style={{fontWeight: "600"}}><i>Sure, holding an NFT is cool, but what’s the point if you can’t show it off with verification?</i></p>
+          <p>When Jay-Z displayed a CryptoPunk as his twitter profile photo the same questions continually echoed by those new to the space with no understanding of NFTs. </p>
+        </div>
+      </div>
+    
+      <div className={styles.sectionTwo}>
+        <svg width="52" height="132" viewBox="0 0 52 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.5251 130.475C24.892 131.842 27.108 131.842 28.4749 130.475L50.7487 108.201C52.1156 106.834 52.1156 104.618 50.7487 103.251C49.3819 101.884 47.1658 101.884 45.799 103.251L26 123.05L6.20101 103.251C4.83418 101.884 2.6181 101.884 1.25126 103.251C-0.115572 104.618 -0.115572 106.834 1.25126 108.201L23.5251 130.475ZM22.5 0L22.5 128H29.5L29.5 0L22.5 0Z" fill="url(#paint0_linear_48:345)"/>
+          <defs>
+          <linearGradient id="paint0_linear_48:345" x1="26" y1="113" x2="26" y2="0" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#09ADEE"/>
+          <stop offset="1" stop-cColor="#09ADEE" stopOpacity="0"/>
+          </linearGradient>
+          </defs>
+        </svg>
+
+        <h1>
+          <i>What if there was a way for people to show off their NFTs with verified proof? </i>
+        </h1>
+
+        <p>Not only that, what if they could use specific NFTs to be granted access to ultra exclusive Gated Access Pages only available to those holding NFTs from certain collections? This can done in a safe and secure environment using established protocols with a solid track record where users will have the option to assume anonymous handles or dox themselves and flex for the whole world to see like Snoop Dogg. </p>
+
+        <p className={styles.cta}>
+          <i>ENTER ONLYFRENS</i>
+        </p>
+      </div>
+      <div className={styles.illustration} >
+        <Image src="/illustration.png" alt="illustration" width="524" height="400"></Image>
+      </div>
+    
+      <div className={styles.animationWrapper}>
+          <div className={styles.inner}>
+              <img src="/frogs/1.png" className={styles.frog}/>
+              <img src="/frogs/2.png" className={styles.frog}/>
+              <img src="/frogs/3.png" className={styles.frog}/>
+              <img src="/frogs/1.png" className={styles.frog}/>
+              <img src="/frogs/2.png" className={styles.frog}/>
+              <img src="/frogs/3.png" className={styles.frog}/>
+              <img src="/frogs/1.png" className={styles.frog}/>
+              <img src="/frogs/2.png" className={styles.frog}/>
+              <img src="/frogs/3.png" className={styles.frog}/>
+              <img src="/frogs/3.png" className={styles.frog}/>
+              <img src="/frogs/2.png" className={styles.frog}/>
+              <img src="/frogs/1.png" className={styles.frog}/>
+          </div>
+
+          <div className={styles.innerTwo}>
+              <img src="/frogs/3.png" className={styles.frog}/>
+              <img src="/frogs/2.png" className={styles.frog}/>
+              <img src="/frogs/1.png" className={styles.frog}/>
+              <img src="/frogs/3.png" className={styles.frog}/>
+              <img src="/frogs/2.png" className={styles.frog}/>
+              <img src="/frogs/1.png" className={styles.frog}/>
+              <img src="/frogs/3.png" className={styles.frog}/>
+              <img src="/frogs/2.png" className={styles.frog}/>
+              <img src="/frogs/1.png" className={styles.frog}/>
+              <img src="/frogs/1.png" className={styles.frog}/>
+              <img src="/frogs/2.png" className={styles.frog}/>
+              <img src="/frogs/3.png" className={styles.frog}/>
+          </div>
       </div>
     </div>
   )

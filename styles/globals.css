@@ -26,3 +26,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+p, h1{
+  color: #333333;
+}
