@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    padding-bottom: 5px;
+    width: 92%;
+    margin: 0 auto;
+    border-bottom: 1px solid #33333338;
+}
+
+.links ul{
+    display: flex;
+    list-style: none;
+}
+
+.links ul li {
+    margin: 0px 20px;
+    font-size: 1.15rem;
+    cursor: pointer;
+    color: #3333337a;
+    display: flex;
+    flex-direction: column;
+}
+
+.links ul li svg {
+    display: none;
+}
+
+.button {
+    background: var(--blue);
+    color: white !important;
+    padding: 15px 20px;
+    border-radius: 35px;
+    font-size: 1rem !important;
+    position: relative;
+    top: -15px;
+}
+
+.active {
+    color: black !important;
+}
+
+.active svg {
+    display: block !important;
+}
