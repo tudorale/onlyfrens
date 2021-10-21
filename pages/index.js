@@ -2,8 +2,42 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar/Navbar";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 export default function Home() {
+
+  function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={styles.nextArrow}
+        onClick={onClick}
+      >
+        <svg width="20" height="28" viewBox="0 0 20 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.98619 27.9636L19.5208 10.0995L1.65665 0.564881L0.0661297 3.54238L14.9549 11.4876L7.00758 26.3752L9.98619 27.9636Z" fill="white"/>
+        </svg>
+      </div>
+    );
+  }
+  
+  function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return null;
+  }
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -71,10 +105,66 @@ export default function Home() {
             <br/>
             To be true Frens for life we must build towards something greater and take the road less traveled! Why should we be limited to only artwork and memes?
             </p>
+
+            <div className={styles.bannerCta}>
+              <span>
+                Connect a<br/> Wallet
+              </span>
+            </div>
           </div>
         </div>
       </div>
       
+      <div className={styles.nfts}>
+        <div className={styles.nftsText}>
+          <h1><span>Frens</span> NFT</h1>
+          <p>
+          In partnership with MemeMarketplace, we will give purpose and meaning to owning an NFT. 
+          <br/>
+          <br/>
+          After the Fren mint, OnlyFrens will transform into a web 3.0 social network, the first of its kind.
+          </p>
+        </div>
+        <div className={styles.nftsCarousel}>
+          <Slider {...settings}>
+            <div className={styles.card}>
+                <Image alt="frog" src="/frogs/frog1.png" width="238" height="236"></Image>
+                <p>FREN #1</p>
+                <p>1 SOL</p>
+            </div>
+            
+            <div className={styles.card}>
+                <Image alt="frog" src="/frogs/frog2.png" width="238" height="236"></Image>
+                <p>FREN #2</p>
+                <p>1 SOL</p>
+            </div>
+
+            <div className={styles.card}>
+                <Image alt="frog" src="/frogs/frog3.png" width="238" height="236"></Image>
+                <p>FREN #3</p>
+                <p>1 SOL</p>
+            </div>
+
+            <div className={styles.card}>
+                <Image alt="frog" src="/frogs/frog1.png" width="238" height="236"></Image>
+                <p>FREN #4</p>
+                <p>1 SOL</p>
+            </div>
+            
+            <div className={styles.card}>
+                <Image alt="frog" src="/frogs/frog2.png" width="238" height="236"></Image>
+                <p>FREN #5</p>
+                <p>1 SOL</p>
+            </div>
+
+            <div className={styles.card}>
+                <Image alt="frog" src="/frogs/frog3.png" width="238" height="236"></Image>
+                <p>FREN #6</p>
+                <p>1 SOL</p>
+            </div>
+          </Slider>
+        </div>
+      </div>
     </div>
   )
 }

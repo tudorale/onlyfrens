@@ -11,6 +11,13 @@ body {
   --blue: #09ADEE;
 }
 
+@font-face {
+  font-family: "Marguerite";
+  src: url("/marguerite.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
 a {
   color: inherit;
   text-decoration: none;
