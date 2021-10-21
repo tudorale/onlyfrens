@@ -238,6 +238,32 @@ export default function Home() {
               <img src="/frogs/3.png" className={styles.frog}/>
           </div>
       </div>
+    
+      <div className={styles.sectionThree}>
+        <div>
+          <p>This is what OnlyFrens will accomplish. We will create an ecosystem where the concept of what a collectable is will never be the same. MemeMarketplace will facilitate the sale of NFTs created by top influencers and function as a pipeline into OnlyFrens.These influencers will create ultra-exclusive gated access pages on OnlyFrens only accessible to verified NFT holders of that influencer’s collection.</p>
+        </div>
+        <div>
+          <p>We will give meaning and purpose to owning an NFT making it more than just a digital collectable, but rather a key to gated communities that only the initiated will have permission to enter. Sure, owning an NFT is fun, but we think there needs to be more to it – the social element – FRENS!  </p>
+        </div>
+      </div>
+    
+      <div className={styles.sectionFour}>
+        <div>
+          <h1>Along with <span>our community</span>,<br/> our behind-the-scenes team<br/> <span>grows</span> as well</h1>
+        </div>
+        <div className={styles.contact}>
+          <svg width="212" height="212" viewBox="0 0 212 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="106" cy="106" r="102" fill="#09ADEE"/>
+            <path fillRule="evenodd" clipRule="evenodd" d="M207.049 138.112C210.265 127.983 212 117.194 212 106C212 74.1433 197.947 45.5689 175.702 26.1378C168.535 30.2215 162.831 36.4692 159.418 43.998C155.861 51.8427 154.989 60.6409 156.936 69.0312C141.377 68.2507 126.155 64.2069 112.259 57.1623C98.3628 50.1178 86.1036 40.2299 76.2767 28.1405C71.2719 36.7563 69.7391 46.9557 71.9902 56.662C74.2414 66.3683 80.1073 74.8518 88.3936 80.3851C82.165 80.2025 76.072 78.5223 70.6303 75.4864V75.9824C70.6328 85.0183 73.7607 93.7752 79.4836 100.768C85.2064 107.76 93.1719 112.558 102.029 114.347C96.2671 115.919 90.2216 116.149 84.3572 115.019C86.8591 122.795 91.7283 129.595 98.284 134.468C104.84 139.341 112.754 142.043 120.922 142.198C112.807 148.576 103.515 153.292 93.5758 156.076C83.637 158.859 73.247 159.656 63 158.42C80.8981 169.905 101.723 175.998 122.989 175.97V176C159.875 176 188.198 160.341 207.049 138.112Z" fill="white"/>
+          </svg>
+
+          <svg style={{marginLeft: "50px"}} width="212" height="212" viewBox="0 0 212 212" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="106" cy="106" r="102" fill="#5865F2"/>
+            <path fillRule="evenodd" clipRule="evenodd" d="M210.233 86.6252C210.169 86.6244 210.104 86.6239 210.039 86.6239C200.465 86.6239 192.879 95.5475 192.879 106.436C192.879 117.306 200.699 126.217 210.068 126.249C208.137 136.235 204.803 145.721 200.281 154.495C193.108 155.955 185.788 156.697 178.427 156.697C161.711 156.697 145.211 152.871 130.152 145.503C129.843 145.757 129.539 146.008 129.238 146.257C128.215 147.101 127.227 147.917 126.176 148.717C131.359 151.852 136.804 154.518 142.447 156.684C139.473 162.724 136.017 168.506 132.114 173.973C114.709 168.496 98.3709 159.995 83.8266 148.85C80.3999 112.093 87.201 74.8322 112.26 36.6151C124.777 30.6416 138.027 26.3988 151.654 24C153.531 27.4507 155.234 30.9964 156.755 34.6232C165.399 33.2736 174.135 32.7308 182.853 32.9949C196.691 47.5578 206.433 66.0499 210.233 86.6252ZM129.577 106.436C129.577 117.325 137.294 126.249 146.737 126.249C156.258 126.249 163.687 117.325 163.896 106.436C164.106 95.5475 156.337 86.6239 146.737 86.6239C137.137 86.6239 129.577 95.5475 129.577 106.436Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
     </div>
   )
 }
