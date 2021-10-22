@@ -303,7 +303,7 @@
 
 .animationWrapper {
     width: 100%;
-    height: 250px;
+    height: 200px;
     background: var(--blue);
     position: absolute;
     margin-top: -285px;
