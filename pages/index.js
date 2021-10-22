@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
 
@@ -264,6 +265,8 @@ export default function Home() {
           </svg>
         </div>
       </div>
+    
+      <Footer />
     </div>
   )
 }

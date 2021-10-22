@@ -15,12 +15,12 @@ function Navbar() {
             <div className={styles.links}>
                 <ul>
                     <Link passHref href="/">
-                    <li className={router.pathname === "/" ? styles.active : ""}>
-                        Home
-                        <svg width="50" height="7" viewBox="0 0 58 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 2.50001C28.5 1.49999 31.5 8.00002 56.5 2.50002" stroke="#09ADEE" strokeWidth="3" strokeLinecap="round"/>
-                        </svg>
-                    </li>
+                        <li className={router.pathname === "/" ? styles.active : ""}>
+                            Home
+                            <svg width="50" height="7" viewBox="0 0 58 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2.50001C28.5 1.49999 31.5 8.00002 56.5 2.50002" stroke="#09ADEE" strokeWidth="3" strokeLinecap="round"/>
+                            </svg>
+                        </li>
                     </Link>
                     <Link passHref href="/roadmap">
                         <li className={router.pathname === "/roadmap" ? styles.active : ""}>
