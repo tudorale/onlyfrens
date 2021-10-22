@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Footer from "../components/Footer/Footer";
-
+import {useEffect} from "react"
 export default function Home() {
 
   function NextArrow(props) {
@@ -39,14 +39,30 @@ export default function Home() {
     prevArrow: <PrevArrow />
   }
 
+  useEffect(() => {
+    let splash = document.querySelector(".splashContainer")
+    let home = document.querySelector(".page")
+    setTimeout(() => {
+      splash.style.display = "none";
+      home.style.display = "block";
+    }, 1500)
+  }, [])
+
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>OnlyFrens NFT</title>
         <meta name="description" content="OnlyFrens" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-  
+
+      <div className={styles.splash + " " + "splashContainer"}>
+        <div className={styles.splashInner}>
+          <img src="/big-logo.png" alt="splash screen logo" width="400" height="160"/>
+        </div>
+      </div>
+
+      <div className={styles.container + " " + "page"}>
       <div className={styles.upperContainer}>
         <Navbar />
 
@@ -268,5 +284,6 @@ export default function Home() {
     
       <Footer />
     </div>
+    </>
   )
 }
