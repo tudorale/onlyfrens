@@ -225,8 +225,9 @@ export default function Home() {
       </div>
     
       <div className={styles.animationWrapper}>
+        <div className={styles.neededWrapper}>
           <div className={styles.inner}>
-              <img src="/frogs/1.png" className={styles.frog}/>
+              <img src="/frogs/1.png" className={styles.frog + " " + styles.first}/>
               <img src="/frogs/2.png" className={styles.frog}/>
               <img src="/frogs/3.png" className={styles.frog}/>
               <img src="/frogs/1.png" className={styles.frog}/>
@@ -241,7 +242,7 @@ export default function Home() {
           </div>
 
           <div className={styles.innerTwo}>
-              <img src="/frogs/3.png" className={styles.frog}/>
+              <img src="/frogs/3.png" className={styles.frog + " " + styles.second}/>
               <img src="/frogs/2.png" className={styles.frog}/>
               <img src="/frogs/1.png" className={styles.frog}/>
               <img src="/frogs/3.png" className={styles.frog}/>
@@ -254,6 +255,7 @@ export default function Home() {
               <img src="/frogs/2.png" className={styles.frog}/>
               <img src="/frogs/3.png" className={styles.frog}/>
           </div>
+        </div>
       </div>
     
       <div className={styles.sectionThree}>

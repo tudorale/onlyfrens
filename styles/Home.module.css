@@ -308,13 +308,20 @@
     position: absolute;
     margin-top: -285px;
     overflow: hidden;
+    
 }
 
-.inner {
-    display: flex;
+.neededWrapper {
     transform: rotate(-10deg);
     position: relative;
+    margin-top: -10px;
+}
+
+.inner, .innerTwo {
+    display: flex;
+    position: relative;
     top: -100px;
+    width: 100%;
 }
 
 .frog {
@@ -324,25 +331,22 @@
     position: relative;
 }
 
-.inner .frog:nth-child(1){
-    animation: bannermove 7s linear infinite forwards alternate-reverse;
+
+.first{
+    animation: bannermove 5s linear infinite backwards alternate-reverse;
 }
 
 .innerTwo {
-    display: flex;
-    transform: rotate(-10deg);
-    position: relative;
     top: -80px;
 }
 
-.innerTwo .frog:nth-child(1){
+.second{
     animation: bannermove 6s linear infinite backwards alternate-reverse;
-    animation-play-state: running;
 }
 
 @keyframes bannermove {
     0% {margin-left: 0px;}
-    100% {margin-left: -2200px;}
+    100% {margin-left: -2100px;}
 }
 
 .sectionThree {
