@@ -1,3 +1,7 @@
+.hero, .banner, .nfts, .lines, .section, .sectionOne, .sectionTwo, .sectionThree, .illustration, .sectionFour, .animationWrapper {
+    display: none !important;
+}
+
 .splashInner {
     display: flex;
     align-items: center;
@@ -308,7 +312,6 @@
     position: absolute;
     margin-top: -285px;
     overflow: hidden;
-    
 }
 
 .neededWrapper {

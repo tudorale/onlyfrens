@@ -205,7 +205,7 @@ export default function Home() {
           <defs>
           <linearGradient id="paint0_linear_48:345" x1="26" y1="113" x2="26" y2="0" gradientUnits="userSpaceOnUse">
           <stop stopColor="#09ADEE"/>
-          <stop offset="1" stop-cColor="#09ADEE" stopOpacity="0"/>
+          <stop offset="1" stopColor="#09ADEE" stopOpacity="0"/>
           </linearGradient>
           </defs>
         </svg>
