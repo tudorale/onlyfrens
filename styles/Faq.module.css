@@ -52,7 +52,7 @@
 
 .lineOne, .lineTwo {
     width: 2.5px;
-    transition: all 200ms linear;
+    transition: all 400ms linear;
     height: 35px;
     background: var(--blue);
 }
@@ -72,4 +72,31 @@
 .question .content p {
     color: #333333c0;
     line-height: 25px;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 1280px){
+    .faqContent {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .faqContent {
+        padding: 0 20px;
+    }
+
+    .question .upper h2{
+        padding-right: 45px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .question .upper h2{
+        font-size: 1.35rem;
+
+    }
 }

@@ -51,8 +51,8 @@ function faq() {
 
         if(s){
             content.style.display = "block"
-            lineOne.style.transform = "rotate(-50deg)"
-            lineTwo.style.transform = "rotate(50deg)"
+            lineOne.style.transform = "rotate(135deg)"
+            lineTwo.style.transform = "rotate(-135deg)"
 
         }else{
             content.style.display = "none";
