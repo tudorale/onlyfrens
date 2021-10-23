@@ -152,17 +152,20 @@
     .hamburger {
         display: flex;
     }
+}
 
-    /* ... */
-    /* .logo {
-        display: none;
+@media only screen and (min-width: 826px){
+    .blackLogo {
+        opacity: 0 !important;
     }
-
-    .blackLogo{
-        display: block;
+    .whiteLogo {
+        opacity: 1 !important;
     }
 
     .container {
-        background: var(--blue);
-    } */
+        background: transparent !important;
+    }
+    .mobileContainer{
+        height: 0px !important;
+    }
 }

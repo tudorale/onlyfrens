@@ -66,7 +66,7 @@ function Navbar() {
     return (
         <>
             <div className={styles.container + " " + "desktop"}>
-                <div className={styles.logo + " " + "whiteLogo"}>
+                <div className={styles.whiteLogo + " " + "whiteLogo"}>
                     <Image src="/logo.png" width="180" height="70" alt="logo"></Image>
                 </div>
 
