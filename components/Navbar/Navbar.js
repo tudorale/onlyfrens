@@ -114,8 +114,8 @@ function Navbar() {
             <div className={styles.mobileContainer + " " + "mobile"}>
                 <ul>
                     <Link passHref href="/"><li>Home</li></Link>
-                    <Link passHref href="/"><li>Roadmap</li></Link>
-                    <Link passHref href="/"><li>FAQ</li></Link>
+                    <Link passHref href="/roadmap"><li>Roadmap</li></Link>
+                    <Link passHref href="/faq"><li>FAQ</li></Link>
                 </ul>
                 <div className={styles.connectBanner}>
                     <Link passHref href="/connect"><p>Connect a wallet</p></Link>
