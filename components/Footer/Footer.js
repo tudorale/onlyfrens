@@ -7,7 +7,7 @@ function Footer() {
         <div className={styles.footer}>
             <div>
                 <Image src="/logo-black.png" width="210" height="90" alt="logo"></Image> 
-                <p>@2021 all right reserved</p>
+                <p className={styles.footerCopyright}>@2021 all right reserved</p>
             </div>
             <div className={styles.footerLinks}>
                 <a href="#" target="_blank">TWITTER</a>

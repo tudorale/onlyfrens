@@ -195,8 +195,8 @@ export default function Home() {
       </div>
 
       <div className={styles.section}>
-        <div>
-          <Image src="/block.png" width="520" height="620" alt="block"></Image>
+        <div className={styles.block}>
+          <Image src="/block.png" quality="100" width="520" height="620" alt="block"></Image>
         </div>
         <div className={styles.texts}>
           <h1 style={{fontWeight: "600"}}>Giving purpose to holding<br/> An <span style={{fontWeight: "800"}}><i>NFT</i></span>:</h1>
@@ -227,7 +227,7 @@ export default function Home() {
         </p>
       </div>
       <div className={styles.illustration} >
-        <Image src="/illustration.png" alt="illustration" width="524" height="400"></Image>
+        <img src="/illustration.png" className={styles.image} layout="fixed" alt="illustration" width="524" height="400"></img>
       </div>
     
       <div className={styles.animationWrapper}>
@@ -290,7 +290,9 @@ export default function Home() {
         </div>
       </div>
     
-      <Footer />
+      <div style={{marginTop: "30px"}}>
+        <Footer />
+      </div>
     </div>
     </>
   )
