@@ -426,6 +426,9 @@
     justify-content: flex-end;
 }
 
+.contact svg {
+    cursor: pointer;
+}
 
 /* RESPONSIVE */
 
@@ -590,12 +593,12 @@
 
 @media only screen and (max-width: 900px){
     .hero{
-        grid-row-gap: 50px;
+        grid-row-gap: 20px;
         grid-template-columns: 1fr;
         justify-items: flex-start;
     }
     .hero .right img {
-        width: 420px;
+        width: 430px;
         height: 600px;
     }
 }

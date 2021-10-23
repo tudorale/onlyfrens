@@ -66,13 +66,17 @@ function Navbar() {
     return (
         <>
             <div className={styles.container + " " + "desktop"}>
-                <div className={styles.whiteLogo + " " + "whiteLogo"}>
-                    <Image src="/logo.png" width="180" height="70" alt="logo"></Image>
-                </div>
+                <Link passHref href="/">
+                    <div className={styles.whiteLogo + " " + "whiteLogo"}>
+                        <Image src="/logo.png" width="180" height="70" alt="logo"></Image>
+                    </div>
+                </Link>
 
+               <Link passHref href="/">
                 <div className={styles.blackLogo + " " + "blackLogo"}>
-                    <Image src="/logo-black.png" width="165" height="69" alt="logo"></Image>
-                </div>
+                        <Image src="/logo-black.png" width="165" height="69" alt="logo"></Image>
+                    </div>
+               </Link>
                 
                 <div className={styles.hamburger} onClick={() => handleMobile()}>
                     <div className={styles.line + " " + "lineOne"}></div>

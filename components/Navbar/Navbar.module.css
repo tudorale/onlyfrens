@@ -6,7 +6,6 @@
     padding-bottom: 5px;
     margin: 0 auto;
     width: 92%;
-    transition: all 450ms linear;
     align-items: center;
     border-bottom: 1px solid #33333338;
 }
@@ -27,6 +26,7 @@
 
 .whiteLogo, .blackLogo {
     transition: all 300ms linear;
+    cursor: pointer;
 }
 
 .whiteLogo {
