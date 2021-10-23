@@ -36,7 +36,15 @@ export default function Home() {
     slidesToScroll: 1,
     initialSlide: 0,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.1,
+        }
+      },
+    ]
   }
 
   useEffect(() => {
@@ -126,12 +134,6 @@ export default function Home() {
                 Connect a<br/> Wallet
               </span>
             </p>
-
-            {/* <div className={styles.bannerCta}>
-              <span>
-                Connect a<br/> Wallet
-              </span>
-            </div> */}
           </div>
         </div>
       </div>
@@ -139,7 +141,7 @@ export default function Home() {
       <div className={styles.nfts}>
         <div className={styles.nftsText}>
           <h1><span>Frens</span> NFT</h1>
-          <p>
+          <p className={styles.individualP}>
           In partnership with MemeMarketplace, we will give purpose and meaning to owning an NFT. 
           <br/>
           <br/>
@@ -149,37 +151,37 @@ export default function Home() {
         <div className={styles.nftsCarousel}>
           <Slider {...settings}>
             <div className={styles.card}>
-                <Image alt="frog" src="/frogs/frog1.png" width="238" height="236"></Image>
+                <Image alt="frog" quality="100" src="/frogs/frog1.png" width="238" height="236"></Image>
                 <p>FREN #1</p>
                 <p>1 SOL</p>
             </div>
             
             <div className={styles.card}>
-                <Image alt="frog" src="/frogs/frog2.png" width="238" height="236"></Image>
+                <Image alt="frog" quality="100" src="/frogs/frog2.png" width="238" height="236"></Image>
                 <p>FREN #2</p>
                 <p>1 SOL</p>
             </div>
 
             <div className={styles.card}>
-                <Image alt="frog" src="/frogs/frog3.png" width="238" height="236"></Image>
+                <Image alt="frog" quality="100" src="/frogs/frog3.png" width="238" height="236"></Image>
                 <p>FREN #3</p>
                 <p>1 SOL</p>
             </div>
 
             <div className={styles.card}>
-                <Image alt="frog" src="/frogs/frog1.png" width="238" height="236"></Image>
+                <Image alt="frog" quality="100" src="/frogs/frog1.png" width="238" height="236"></Image>
                 <p>FREN #4</p>
                 <p>1 SOL</p>
             </div>
             
             <div className={styles.card}>
-                <Image alt="frog" src="/frogs/frog2.png" width="238" height="236"></Image>
+                <Image alt="frog" quality="100" src="/frogs/frog2.png" width="238" height="236"></Image>
                 <p>FREN #5</p>
                 <p>1 SOL</p>
             </div>
 
             <div className={styles.card}>
-                <Image alt="frog" src="/frogs/frog3.png" width="238" height="236"></Image>
+                <Image alt="frog" quality="100"src="/frogs/frog3.png" width="238" height="236"></Image>
                 <p>FREN #6</p>
                 <p>1 SOL</p>
             </div>
