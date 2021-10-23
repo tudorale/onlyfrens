@@ -91,7 +91,7 @@ export default function Home() {
       <div className={styles.banner}>
         <div className={styles.bannerContent}>
           <div className={styles.leftImage}>
-            <Image src="/banner.png" width="731" height="534" alt="illustration"></Image>
+            <img src="/banner.png" className={styles.bannerImage} layout="fixed" width="500" height="450" alt="illustration"></img>
           </div>
           <div className={styles.bannerText}>
             <p>What is 
@@ -122,13 +122,16 @@ export default function Home() {
             <br/>
             <br/>
             To be true Frens for life we must build towards something greater and take the road less traveled! Why should we be limited to only artwork and memes?
-            </p>
-
-            <div className={styles.bannerCta}>
               <span>
                 Connect a<br/> Wallet
               </span>
-            </div>
+            </p>
+
+            {/* <div className={styles.bannerCta}>
+              <span>
+                Connect a<br/> Wallet
+              </span>
+            </div> */}
           </div>
         </div>
       </div>

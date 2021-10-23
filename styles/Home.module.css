@@ -1,4 +1,4 @@
-.banner, .nfts, .lines, .section, .sectionOne, .sectionTwo, .sectionThree, .illustration, .sectionFour, .animationWrapper {
+.nfts, .lines, .section, .sectionOne, .sectionTwo, .sectionThree, .illustration, .sectionFour, .animationWrapper {
     display: none !important;
 }
 
@@ -161,6 +161,7 @@
 .leftImage{
     position: relative;
     top: 4px;
+    left: 40px;
 }
 
 .leftImage::before{
@@ -175,13 +176,18 @@
     margin-left: -50px;
 }
 
+.bannerImage {
+    position: relative;
+    left: 50px;
+}
+
 .bannerText p:nth-child(2){
     margin-top: 20px;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.bannerCta {
+.bannerText p span {
     padding: 50px 30px;
     background: #3EC6FC;
     border-radius: 50%;
@@ -189,7 +195,9 @@
     text-align: center;
     cursor: pointer;
     position: absolute;
-    margin-left: 400px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 370px;
 }
 
 .nfts {
@@ -412,8 +420,62 @@
         width: 400px;
         height: 550px;
     }
+
+    .bannerContent {
+        width: 100%;
+        padding: 0 30px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bannerImage{
+        left: 0px;
+    }
+
+    .leftImage {
+        left: 0px;
+    }
 }
 
+@media only screen and (max-width: 1230px){
+    .leftImage {
+        grid-area: image;
+    }
+
+    .bannerText {
+        grid-area: text;
+    }
+
+    .bannerContent {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+        grid-template-areas: 
+        "text"
+        "image"
+        ;
+    }
+
+    .bannerText p:nth-child(1){
+        transform: rotate(-5deg);
+        font-size: 2rem;
+        position: relative;
+        left: 0px;
+        top: -50px;
+    }
+
+    .bannerText p span {
+        padding: 50px 30px;
+        background: #3EC6FC;
+        border-radius: 50%;
+        width: fit-content;
+        text-align: center;
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        margin-top: -390px;
+        margin-left: 0px;
+    }
+    
+}
 
 @media only screen and (max-width: 1050px){
   .hero .left h1{
@@ -433,10 +495,38 @@
         width: 420px;
         height: 600px;
     }
-  }
+}
+
+@media only screen and (max-width: 700px){
+    .bannerText p:nth-child(1){
+        transform: rotate(-5deg);
+        font-size: 2rem;
+        position: relative;
+        left: 0px;
+        top: -20px;
+    }
+
+    .upperContainer {
+        padding-bottom: 150px;
+    }
+
+    .leftImage::before {
+        margin-top: 0px;
+        margin-left: -120px;
+    }
+
+    .leftImage {
+        left: -10px;
+    }
+
+    .bannerImage {
+        width: 450px;
+        height: 400px;
+    }
+}
 
 @media only screen and (max-width: 500px){
-    .hero{
+    .hero, .bannerContent{
         padding: 0 20px;
     }
     .hero .right .rightDesktop {
@@ -446,6 +536,32 @@
         display: block !important;
         width: 325px;
         height: 680px;
+    }
+
+    .bannerText p:nth-child(1) {
+        top: -10px;
+        font-size: 1.5rem;
+    }
+
+    .bannerText p:nth-child(1) svg {
+        width: 150px;
+        height: 70px;
+    }
+
+    .bannerText p span {
+        margin-top: -440px;
+    }
+
+    .leftImage::before {
+        margin-top: 0px;
+        margin-left: -120px;
+        width: 450px;
+        height: 455px;
+    }
+
+    .bannerImage {
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -467,5 +583,19 @@
 
     .hero .left p:nth-child(2) {
         width: 260px;
+    }
+
+    .leftImage::before {
+        margin-top: -10px;
+        margin-left: -170px;
+    }
+
+    .leftImage {
+        left: -10px;
+    }
+
+    .bannerImage {
+        width: 290px;
+        height: 310px;
     }
 }
