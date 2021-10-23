@@ -22,23 +22,47 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
+    grid-template-areas: "image text";
 }
 
 .roadmapGrid .image {
     position: relative;
     top: 70px;
+    grid-area: image;
 }
 
 .roadmapText {
     display: flex;
+    grid-area: text;
 }
 
 .path {
     position: relative;
     top: -20px;
     left: 60px;
-    width: 550px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
 }
+
+.pathOne h1, .pathTwo h1, .pathThree h1, .pathFour h1, .pathFive h1 {
+    margin-top: 0px;
+}
+
+.pathOne {
+    height: 427px;
+    margin-top: 18px;
+}
+.pathTwo {
+    height: 325px;
+}
+.pathThree {
+    height: 143px;
+}
+.pathFour {
+    height: 250px;
+}
+
 
 .path h1 {
     font-size: 1.8rem;
@@ -57,3 +81,74 @@
 .roadmapText svg {
     position: absolute;
 }
+
+@media only screen and (max-width: 1280px){
+    .extraWrapper {
+        width: 100%;
+        padding: 0 30px;
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .roadmapGrid {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        grid-template-areas: "text";
+    }
+
+    .roadmapGrid .image {
+        display: none;
+    }
+
+    .extraWrapper{
+        top: 30px;    
+    }
+
+    .roadmapText {
+        margin-top: 25px;
+    }
+
+    .path {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 715px){
+    .path {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .path {
+        width: 370px;
+    }
+}
+
+@media only screen and (max-width: 465px){
+    .path {
+        width: 300px;
+    }
+
+    .extraWrapper {
+        padding: 0 15px;
+        top: 10px;
+    }
+}
+
+@media only screen and (max-width: 380px){
+    .path {
+        width: 220px;
+    }
+    .path ul li {
+        margin-top: 10px;
+        color: #333333c7;
+        font-size: 0.95rem;
+    }
+    .path ul {
+        position: relative;
+        top: -12px;
+    }
+}
+

@@ -387,7 +387,7 @@
 }
 
 .sectionThree {
-    margin: 50px auto;
+    margin: 0px auto;
     display: grid;
     width: 1240px;
     grid-template-columns: 1fr 1fr;
