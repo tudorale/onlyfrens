@@ -68,7 +68,7 @@ export default function Home() {
 
         <div className={styles.hero}>
           <div className={styles.left}>
-            <h1>Frens NFT <span>is just</span> <br/> the beginning!</h1>
+            <h1>Frens NFT <span>is just</span> the beginning!</h1>
             <p>To be true Frens for life we must build towards something greater and take the road less traveled! Why should we be limited to only artwork and memes?</p>
             <div className={styles.info}>
               <div>
@@ -82,7 +82,8 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.right}>
-            <Image src="/hero.png" width="500" height="650" alt="illustration"></Image>
+            <img src="/hero.png" className={styles.rightDesktop} width="500" height="650" alt="illustration"></img>
+            <img src="/hero-mobile.png" className={styles.rightMobile} alt="illustration"></img>
           </div>
         </div>
       </div>
