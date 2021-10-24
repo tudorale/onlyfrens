@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from "next/link"
 import { useRouter } from 'next/router'
 
-function Navbar() {
+function Navbar() { 
 
     const router = useRouter()
 

@@ -4,7 +4,7 @@ import styles from '../styles/Roadmap.module.css'
 import Image from 'next/image'
 import Footer from '../components/Footer/Footer';
 
-function roadmap() {
+function roadmap() { /* future dev note: in the future if the roadmap is getting bigger, major UI changes regarding to alignment will be needed */
     return (
         <div className={styles.roadmap}>
             <Navbar/>

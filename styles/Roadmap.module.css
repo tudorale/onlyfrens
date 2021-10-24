@@ -50,7 +50,7 @@
 }
 
 .pathOne {
-    height: 427px;
+    height: 427px; /* future dev note: every path has a specific height for perfect UI alignment, add bgcolor to each one for better understanding */
     margin-top: 18px;
 }
 .pathTwo {

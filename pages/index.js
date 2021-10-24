@@ -47,13 +47,13 @@ export default function Home() {
     ]
   }
 
-  useEffect(() => {
+  useEffect(() => { /* future dev note: useEffect for the splash screen on / page */
     let splash = document.querySelector(".splashContainer")
     let home = document.querySelector(".page")
     setTimeout(() => {
-      splash.style.display = "none";
+      splash.style.display = "none"; 
       home.style.display = "block";
-    }, 1500)
+    }, 1500) 
   }, [])
 
   return (

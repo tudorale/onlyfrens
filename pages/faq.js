@@ -14,11 +14,11 @@ function faq() {
     let statusSeven = false;
     let statusEight = false;
 
-    const handleFaq = (className, lineO, lineT, status) => {
+    const handleFaq = (className, lineO, lineT, status) => { /* must added parameters */
         
         let s;
 
-        if(status == "statusOne"){
+        if(status == "statusOne"){/* future dev note: a really hard coded script to check which one to open/close */
             s = !statusOne;
             statusOne = !statusOne;
         }else if(status == "statusTwo"){
